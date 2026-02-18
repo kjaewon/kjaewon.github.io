@@ -1,0 +1,422 @@
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  min-height: 100vh;
+}
+
+.app-header {
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: 1.75rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.header-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.setting-row label {
+  font-weight: 500;
+  min-width: 5rem;
+}
+
+.display-name-input {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  min-width: 160px;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Retirement date input */
+.retirement-date-input {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.retirement-date-input label {
+  font-weight: 500;
+}
+
+.date-input {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Countdown section */
+.countdown-section {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.countdown-placeholder,
+.countdown-message {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.countdown-sub {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.countdown-d-day {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+.countdown-ymd {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.countdown-past .countdown-message,
+.countdown-today .countdown-message {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Milestones */
+.milestones-section h2,
+.plans-section h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem 0;
+  font-weight: 600;
+}
+
+.milestones-section {
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+}
+
+.milestones-placeholder {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.milestones-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.milestone-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.milestone-item:last-child {
+  border-bottom: none;
+}
+
+.milestone-label {
+  font-weight: 500;
+  min-width: 120px;
+}
+
+.milestone-date {
+  color: var(--text);
+  flex: 1;
+}
+
+.milestone-days {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.milestone-past .milestone-date {
+  color: var(--text-muted);
+}
+
+.milestone-badge {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  background: var(--muted-bg);
+  color: var(--text-muted);
+}
+
+/* Plans */
+.plans-section {
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+}
+
+.plan-add-form {
+  margin-bottom: 1rem;
+}
+
+.plan-add-details {
+  margin-top: 0.5rem;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan-input-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.plan-description-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  resize: vertical;
+  font-family: inherit;
+}
+
+.plan-date-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.plan-date-row label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.plan-date-input {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.plan-input {
+  flex: 1;
+  min-width: 180px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.plan-input::placeholder {
+  color: var(--text-muted);
+}
+
+.plans-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plans-empty {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  padding: 0.75rem 0;
+}
+
+.plan-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.plan-item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.plan-description {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.plan-item-meta {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.plan-meta-date {
+  white-space: nowrap;
+}
+
+.plan-item-actions {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.plan-edit-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan-edit-form .plan-edit-input {
+  width: 100%;
+}
+
+.plan-edit-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.plan-item:last-child {
+  border-bottom: none;
+}
+
+.plan-checkbox {
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.plan-title {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.plan-item-completed .plan-title {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.plan-edit-input {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: var(--btn-hover);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+}
+
+.btn-small {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+}
+
+.btn-danger:hover {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+  border-color: var(--danger-border);
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 1rem;
+  }
+  .countdown-d-day {
+    font-size: 2rem;
+  }
+}
